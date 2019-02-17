@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One|M+PLUS+Rounded+1c');
+
+$purple: #862e9c;
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #212529;
+  color: #495057;
+}
+
+h1, h3, label, strong {
+  font-family: 'Days One', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: $purple;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.curriculum {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.51);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.51);
+
+  &__header {
+    height: 360px;
+    background-image: url("../images/background-coding.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid $purple;
+    position: relative;
+  }
+
+  &__photo {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    bottom: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.4);
+  }
+
+  &__content {
+    margin: 0 4rem;
+  }
+
+  &__title {
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom: 1px solid $purple;
+
+    h1 {
+      font-size: 2.9rem;
+      color: $purple;
+      margin-bottom: .7rem;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__data-contact,
+  &__academic-experience,
+  &__skills,
+  &__experience {
+    padding: 3rem 3rem 2rem;
+    border-bottom: 1px solid $purple;
+
+    h3 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      color: $purple;
+    }
+
+    label {
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: .3rem;
+      text-transform: uppercase;
+    }
+
+    strong {
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__data-contact {
+    div {
+      display: flex;
+    }
+
+    span:not(:first-child) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__academic-experience {
+    > div {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__skills {
+    table {
+      width: 100%;
+
+      thead {
+        font-family: 'Days One', sans-serif;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+
+        th {
+          padding-bottom: 1rem;
+        }
+      }
+
+      tbody {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__experience {
+    border-bottom: 0;
+  }
+}
